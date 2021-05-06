@@ -16,7 +16,7 @@ public class Trie {
      * @param word 需要插入的字符串
      */
     public void insert(String word) {
-        Trie node = this; //根结点为空
+        Trie node = this; //调用构造器
         for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
             int chArrNum = ch - 'a';    //获取该字符对应的值
